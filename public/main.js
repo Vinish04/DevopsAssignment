@@ -626,6 +626,7 @@ class PutdetailsComponent {
         this.newid = id;
         console.log(this.service.obj._id);
         console.log(this.putform.value);
+        console.log(this.route.url);
     }
     submit() {
         this.service.putUser(this.service.obj._id, this.putform.value).subscribe((res) => {
