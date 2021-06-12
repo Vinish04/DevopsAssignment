@@ -38,7 +38,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _details_details_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./details/details.component */ "./src/app/details/details.component.ts");
 /* harmony import */ var _forms_forms_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./forms/forms.component */ "./src/app/forms/forms.component.ts");
 /* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
-/* harmony import */ var _putdetails_putdetails_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./putdetails/putdetails.component */ "./src/app/putdetails/putdetails.component.ts");
+/* harmony import */ var _pagenotfound_pagenotfound_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pagenotfound/pagenotfound.component */ "./src/app/pagenotfound/pagenotfound.component.ts");
+/* harmony import */ var _putdetails_putdetails_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./putdetails/putdetails.component */ "./src/app/putdetails/putdetails.component.ts");
+
 
 
 
@@ -50,8 +52,9 @@ __webpack_require__.r(__webpack_exports__);
 const routes = [
     { path: "", component: _home_home_component__WEBPACK_IMPORTED_MODULE_4__["HomeComponent"] },
     { path: "details/:id", component: _details_details_component__WEBPACK_IMPORTED_MODULE_2__["DetailsComponent"] },
-    { path: "putdetails/:id", component: _putdetails_putdetails_component__WEBPACK_IMPORTED_MODULE_5__["PutdetailsComponent"] },
-    { path: "NewBlog", component: _forms_forms_component__WEBPACK_IMPORTED_MODULE_3__["FormsComponent"] }
+    { path: "putdetails/:id", component: _putdetails_putdetails_component__WEBPACK_IMPORTED_MODULE_6__["PutdetailsComponent"] },
+    { path: "NewBlog", component: _forms_forms_component__WEBPACK_IMPORTED_MODULE_3__["FormsComponent"] },
+    { path: "**", component: _pagenotfound_pagenotfound_component__WEBPACK_IMPORTED_MODULE_5__["PagenotfoundComponent"] }
 ];
 class AppRoutingModule {
 }
@@ -126,6 +129,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
 /* harmony import */ var _details_details_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./details/details.component */ "./src/app/details/details.component.ts");
 /* harmony import */ var _putdetails_putdetails_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./putdetails/putdetails.component */ "./src/app/putdetails/putdetails.component.ts");
+/* harmony import */ var _pagenotfound_pagenotfound_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./pagenotfound/pagenotfound.component */ "./src/app/pagenotfound/pagenotfound.component.ts");
+
 
 
 
@@ -152,7 +157,8 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
         _home_home_component__WEBPACK_IMPORTED_MODULE_6__["HomeComponent"],
         _forms_forms_component__WEBPACK_IMPORTED_MODULE_7__["FormsComponent"],
         _details_details_component__WEBPACK_IMPORTED_MODULE_9__["DetailsComponent"],
-        _putdetails_putdetails_component__WEBPACK_IMPORTED_MODULE_10__["PutdetailsComponent"]], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
+        _putdetails_putdetails_component__WEBPACK_IMPORTED_MODULE_10__["PutdetailsComponent"],
+        _pagenotfound_pagenotfound_component__WEBPACK_IMPORTED_MODULE_11__["PagenotfoundComponent"]], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
         _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"],
         _angular_forms__WEBPACK_IMPORTED_MODULE_8__["ReactiveFormsModule"],
         _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClientModule"]] }); })();
@@ -165,7 +171,8 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
                     _home_home_component__WEBPACK_IMPORTED_MODULE_6__["HomeComponent"],
                     _forms_forms_component__WEBPACK_IMPORTED_MODULE_7__["FormsComponent"],
                     _details_details_component__WEBPACK_IMPORTED_MODULE_9__["DetailsComponent"],
-                    _putdetails_putdetails_component__WEBPACK_IMPORTED_MODULE_10__["PutdetailsComponent"]
+                    _putdetails_putdetails_component__WEBPACK_IMPORTED_MODULE_10__["PutdetailsComponent"],
+                    _pagenotfound_pagenotfound_component__WEBPACK_IMPORTED_MODULE_11__["PagenotfoundComponent"]
                 ],
                 imports: [
                     _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -539,6 +546,42 @@ NavComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCompo
                 selector: 'app-nav',
                 templateUrl: './nav.component.html',
                 styleUrls: ['./nav.component.css']
+            }]
+    }], function () { return []; }, null); })();
+
+
+/***/ }),
+
+/***/ "./src/app/pagenotfound/pagenotfound.component.ts":
+/*!********************************************************!*\
+  !*** ./src/app/pagenotfound/pagenotfound.component.ts ***!
+  \********************************************************/
+/*! exports provided: PagenotfoundComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PagenotfoundComponent", function() { return PagenotfoundComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+
+
+class PagenotfoundComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+}
+PagenotfoundComponent.ɵfac = function PagenotfoundComponent_Factory(t) { return new (t || PagenotfoundComponent)(); };
+PagenotfoundComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: PagenotfoundComponent, selectors: [["app-pagenotfound"]], decls: 2, vars: 0, template: function PagenotfoundComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "pagenotfound works!");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } }, styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2Vub3Rmb3VuZC9wYWdlbm90Zm91bmQuY29tcG9uZW50LmNzcyJ9 */"] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](PagenotfoundComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'app-pagenotfound',
+                templateUrl: './pagenotfound.component.html',
+                styleUrls: ['./pagenotfound.component.css']
             }]
     }], function () { return []; }, null); })();
 
